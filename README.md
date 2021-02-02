@@ -2,6 +2,8 @@
 
 ## Planning
 
+https://docs.google.com/document/d/1XMKTJJ2iJljxaTinYw4Xjde5B8b4VCf9x-aKtkw4NvU/edit
+
 ## Materials
 
 7 segment display 1.2'- https://www.adafruit.com/product/1269
@@ -12,7 +14,9 @@ Basketball hoop 12x18 - https://sklz.implus.com/products/pro-mini-hoop/sklz-pro-
 
 ### Week 1
 
-In week one we wrte a little bit of suto-code and figured out what materials we will need.
+This is a link to our planning - https://docs.google.com/document/d/1XMKTJJ2iJljxaTinYw4Xjde5B8b4VCf9x-aKtkw4NvU/edit
+
+In week one we wrte a little bit of pseudo code and figured out what materials we will need.
 
 ```C++ 
 #define echoPin 2 // attach pin D2 Arduino to pin Echo of HC-SR04
