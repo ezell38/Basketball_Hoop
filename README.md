@@ -151,7 +151,7 @@ The digital writes tell which led to lightup to display the given numbers.
 
 ### 7 segment diplay 
 
-
+<img src="7segment.png" alt="7segment" width="350" height="350">
 
 ### Final wiring
 
