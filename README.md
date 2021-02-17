@@ -244,8 +244,6 @@ This is the final code. I made a seperate function for each number that was disp
 
 ### 7 segment diplay 
 
-<img src="7segment.png" alt="7segment" width="350" height="350">
-
 ### Final wiring
 
 ## Final Code
