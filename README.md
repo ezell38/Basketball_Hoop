@@ -1,5 +1,9 @@
 # Basketball_Hoop
 
+## What major obstacle has kept us from making better progress?
+
+Whats held us back from making a lot of progress is the amount of resources available because we have needed something that will essentially finish our project that we need our parents to help us make. 
+
 ## Planning
 
 https://docs.google.com/document/d/1XMKTJJ2iJljxaTinYw4Xjde5B8b4VCf9x-aKtkw4NvU/edit
