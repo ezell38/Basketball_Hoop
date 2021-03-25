@@ -303,10 +303,8 @@ void loop() {
 
 ### Final wiring
 
-## Final Code
-
-```C+
-// NewPing - Version: Latest
+### Final code
+```c+
 #include <NewPing.h>
 #include <Wire.h> // Enable this line if using Arduino Uno, Mega, etc.
 #include <Adafruit_GFX.h>
@@ -324,6 +322,9 @@ int distance; // variable for the distance measurement
 int pos = 0;
 int dis = 0; 
 int counter = 0;
+int buzzerPin = 9;//buzzer to arduino pin 9
+
+
 
 NewPing sonar(TRIGGER_PIN, ECHO_PIN, MAX_DISTANCE); // NewPing setup of pins and maximum distance.
 
@@ -346,12 +347,16 @@ void loop() {
     counter++ ;
   delay(20) ; 
   }
-  Serial.print("Counter: ");
+  else if (counter == 15) { 
+  digitalWrite(buzzerPin, HIGH);
+  digitalWrite(buzzerPin, LOW);
+  matrix.blinkRate(1); // blink code 
+  }
+  Serial.print("Counter: "); 
   Serial.println(counter);
   matrix.print(counter, DEC);
   matrix.writeDisplay();
   delay(20); 
-}
 ```
 
 ## Errors and How We Overcame Them
