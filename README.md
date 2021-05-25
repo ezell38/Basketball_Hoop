@@ -299,9 +299,15 @@ void loop() {
 
 ### Ultrasonic sensor
 
+
+
 ### 7 segment diplay 
 
+<img src="Ultrasonicsensor_wiring/Ultrasonicsensor_wiring.jpg" alt="Ultrasonicsensor_wiring" width="200" height="200">
+
 ### Final wiring
+
+<img src="Final_wiring/Final_wiring.jpg" alt="Final_wiring" width="200" height="200">
 
 ### Final code
 ```c+
