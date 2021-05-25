@@ -303,10 +303,11 @@ void loop() {
 
 <img src="Sensor2.jpg" alt="Sensor2" width="400" height="400">
 
+<img src="Sensor.jpg" alt="Sensor" width="400" height="400">
+
 ### Final wiring
 
 <img src="Final.jpg" alt="Final" width="400" height="400">
-
 
 <img src="wiring.jpg" alt="wiring" width="400" height="400">
 
