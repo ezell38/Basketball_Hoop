@@ -297,8 +297,6 @@ void loop() {
 
 ## Diagram of Wiring
 
-### Ultrasonic sensor
-
 
 
 ### 7 segment diplay 
