@@ -299,13 +299,13 @@ void loop() {
 
 ### 7 segment diplay 
 
-<img src="7segment.jpg" alt="7segment" width="200" height="200">
+<img src="7segment.jpg" alt="7segment" width="400" height="400">
 
-<img src="Display.jpg" alt="Display" width="200" height="200">
+<img src="Display.jpg" alt="Display" width="400" height="400">
 
 ### Final wiring
 
-<img src="Final.jpg" alt="Final" width="200" height="200">
+<img src="Final.jpg" alt="Final" width="400" height="400">
 
 ### Final code
 ```c+
