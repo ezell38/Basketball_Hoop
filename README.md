@@ -297,15 +297,15 @@ void loop() {
 
 ## Diagram of Wiring
 
-
-
 ### 7 segment diplay 
 
-<img src="Ultrasonicsensor_wiring.jpg" alt="Ultrasonicsensor_wiring" width="200" height="200">
+<img src="7segment.jpg" alt="7segment" width="200" height="200">
+
+<img src="Display.jpg" alt="Display" width="200" height="200">
 
 ### Final wiring
 
-<img src="Final_wiring.jpg" alt="Final_wiring" width="200" height="200">
+<img src="Final.jpg" alt="Final" width="200" height="200">
 
 ### Final code
 ```c+
@@ -362,5 +362,3 @@ void loop() {
   matrix.writeDisplay();
   delay(20); 
 ```
-
-## Errors and How We Overcame Them
