@@ -299,13 +299,16 @@ void loop() {
 
 ### 7 segment diplay 
 
-<img src="7segment.jpg" alt="7segment" width="400" height="400">
+<img src="Sensor1.jpg" alt="Sensor1" width="400" height="400">
 
-<img src="Display.jpg" alt="Display" width="400" height="400">
+<img src="Sensor2.jpg" alt="Sensor2" width="400" height="400">
 
 ### Final wiring
 
 <img src="Final.jpg" alt="Final" width="400" height="400">
+
+
+<img src="wiring.jpg" alt="wiring" width="400" height="400">
 
 ### Final code
 ```c+
@@ -365,3 +368,11 @@ void loop() {
 
 ### Final Product
 
+
+<img src="Done2.jpg" alt="Done2" width="400" height="400">
+
+
+<img src="Done1.jpg" alt="Done1" width="400" height="400">
+
+
+<img src="Done.jpg" alt="Done" width="400" height="400">
