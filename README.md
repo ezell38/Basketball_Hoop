@@ -16,7 +16,7 @@ https://docs.google.com/document/d/1XMKTJJ2iJljxaTinYw4Xjde5B8b4VCf9x-aKtkw4NvU/
 
 ## CAD Renderings 
 https://cvilleschools.onshape.com/documents/41f019ee7b99a5521342394d/w/67ee0ddfe5a162cbf153799c/e/70d3de000d6b04c5495e8bd5
-
+https://cvilleschools.onshape.com/documents/185367432ea89ab303a01cd5/w/fb27e20458459c03310c0fe2/e/626fa8809c3603efd36d61f3
 
 ### Final code
 ```c+
