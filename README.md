@@ -1,18 +1,99 @@
 # Basketball_Hoop
 
-## What major obstacle has kept us from making better progress?
-
-Whats held us back from making a lot of progress is the amount of resources available because we have needed something that will essentially finish our project that we need our parents to help us make. 
-
 ## Planning
 
 https://docs.google.com/document/d/1XMKTJJ2iJljxaTinYw4Xjde5B8b4VCf9x-aKtkw4NvU/edit
 
 ## Materials
 
-7 segment display 50mm/2" wide 120mm/4.7" long 13mm/0.5" high- https://www.adafruit.com/product/1269
+* 7 segment display 50mm/2" wide 120mm/4.7" long 13mm/0.5" high- https://www.adafruit.com/product/1269
+* Arduino Uno
+* Basketball hoop 12x18 - https://sklz.implus.com/products/pro-mini-hoop/sklz-pro-mini-hoop-original
+* Jumper wires
+* Ultrasonic Sensor
+* Breadboard 
+* Nuts and bolts
 
-Basketball hoop 12x18 - https://sklz.implus.com/products/pro-mini-hoop/sklz-pro-mini-hoop-original
+## CAD Renderings 
+
+### Final code
+```c+
+#include <NewPing.h>
+#include <Wire.h> // Enable this line if using Arduino Uno, Mega, etc.
+#include <Adafruit_GFX.h>
+#include "Adafruit_LEDBackpack.h"
+
+Adafruit_7segment matrix = Adafruit_7segment();
+/*
+
+*/
+#define TRIGGER_PIN 12 // Arduino pin tied to trigger pin on the ultrasonic sensor.
+#define ECHO_PIN 11 // Arduino pin tied to echo pin on the ultrasonic sensor. 
+#define MAX_DISTANCE 200 // Maximum distance we want to ping for (in centimeters).
+
+int distance; // variable for the distance measurement
+int pos = 0;
+int dis = 0; 
+int counter = 0;
+int buzzerPin = 9;//buzzer to arduino pin 9
+
+
+
+NewPing sonar(TRIGGER_PIN, ECHO_PIN, MAX_DISTANCE); // NewPing setup of pins and maximum distance.
+
+void setup() {
+  Serial.begin(9600); // // Serial Communication is starting with 9600 of baudrate speed
+  #ifndef __AVR_ATtiny85__
+  Serial.println("7 Segment Backpack Test");
+#endif
+  matrix.begin(0x70);
+}
+
+
+// the loop routine runs over and over again forever:
+oid loop() {
+  distance = sonar.ping_cm();
+  Serial.print("distance: ");
+  Serial.print(distance);
+  Serial.print("cm \t");
+  if (distance < 11 && distance != 0) {
+    counter++ ;
+  delay(20) ; 
+  }
+  else if (counter == 15) { 
+  digitalWrite(buzzerPin, HIGH);
+  digitalWrite(buzzerPin, LOW);
+  matrix.blinkRate(1); // blink code 
+  }
+  Serial.print("Counter: "); 
+  Serial.println(counter);
+  matrix.print(counter, DEC);
+  matrix.writeDisplay();
+  delay(20); 
+```
+
+## Wiring 
+
+<img src="Final.jpg" alt="Final" width="400" height="400">
+
+<img src="wiring.jpg" alt="wiring" width="400" height="400">
+
+<img src="Sensor1.jpg" alt="Sensor1" width="400" height="400">
+
+<img src="Sensor2.jpg" alt="Sensor2" width="400" height="400">
+
+<img src="Sensor.jpg" alt="Sensor" width="400" height="400">
+
+### Final Product
+
+
+<img src="Done2.jpg" alt="Done2" width="400" height="400">
+
+
+<img src="Done1.jpg" alt="Done1" width="400" height="400">
+
+
+<img src="Done.jpg" alt="Done" width="400" height="400">
 
 ## Milestones
 
@@ -295,85 +376,3 @@ void loop() {
  ```
  The code here is simplifyed from having each individual number that we wanted to display printed out to the counter and display corresponding. 
 
-## Diagram of Wiring
-
-### 7 segment diplay 
-
-<img src="Sensor1.jpg" alt="Sensor1" width="400" height="400">
-
-<img src="Sensor2.jpg" alt="Sensor2" width="400" height="400">
-
-<img src="Sensor.jpg" alt="Sensor" width="400" height="400">
-
-### Final wiring
-
-<img src="Final.jpg" alt="Final" width="400" height="400">
-
-<img src="wiring.jpg" alt="wiring" width="400" height="400">
-
-### Final code
-```c+
-#include <NewPing.h>
-#include <Wire.h> // Enable this line if using Arduino Uno, Mega, etc.
-#include <Adafruit_GFX.h>
-#include "Adafruit_LEDBackpack.h"
-
-Adafruit_7segment matrix = Adafruit_7segment();
-/*
-
-*/
-#define TRIGGER_PIN 12 // Arduino pin tied to trigger pin on the ultrasonic sensor.
-#define ECHO_PIN 11 // Arduino pin tied to echo pin on the ultrasonic sensor. 
-#define MAX_DISTANCE 200 // Maximum distance we want to ping for (in centimeters).
-
-int distance; // variable for the distance measurement
-int pos = 0;
-int dis = 0; 
-int counter = 0;
-int buzzerPin = 9;//buzzer to arduino pin 9
-
-
-
-NewPing sonar(TRIGGER_PIN, ECHO_PIN, MAX_DISTANCE); // NewPing setup of pins and maximum distance.
-
-void setup() {
-  Serial.begin(9600); // // Serial Communication is starting with 9600 of baudrate speed
-  #ifndef __AVR_ATtiny85__
-  Serial.println("7 Segment Backpack Test");
-#endif
-  matrix.begin(0x70);
-}
-
-
-// the loop routine runs over and over again forever:
-void loop() {
-  distance = sonar.ping_cm();
-  Serial.print("distance: ");
-  Serial.print(distance);
-  Serial.print("cm \t");
-  if (distance < 11 && distance != 0) {
-    counter++ ;
-  delay(20) ; 
-  }
-  else if (counter == 15) { 
-  digitalWrite(buzzerPin, HIGH);
-  digitalWrite(buzzerPin, LOW);
-  matrix.blinkRate(1); // blink code 
-  }
-  Serial.print("Counter: "); 
-  Serial.println(counter);
-  matrix.print(counter, DEC);
-  matrix.writeDisplay();
-  delay(20); 
-```
-
-### Final Product
-
-
-<img src="Done2.jpg" alt="Done2" width="400" height="400">
-
-
-<img src="Done1.jpg" alt="Done1" width="400" height="400">
-
-
-<img src="Done.jpg" alt="Done" width="400" height="400">
