@@ -378,3 +378,5 @@ void loop() {
  ```
  The code here is simplifyed from having each individual number that we wanted to display printed out to the counter and display corresponding. 
 
+## Reflection
+We made this basketball hope in the middle of a pandemic and we definitely had some challenges along the way. The biggest problem was working from two different classes. We did do school together, but we never really worked on our project at the same time because of different class periods. When we got in school, we had to find another way of communicating rather than just yellng to eachother. Usually that would be texting. Another big challenge we faced was with the ultrasonic sensor. At first we just coded and slowed down how fast it measured the distance, but it was still too fast. It kept counting multiple baskets. We fixed that by making the ultrasonic sensor count 1 and then not count again until the distance was greater than 5 inches. We had a fun time making this hoop and it was a good challenge. We finished kind of early and got to do final touch-ups without rushing it which was nice. Our project turned out great and it all worked out in the end!
