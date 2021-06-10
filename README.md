@@ -15,6 +15,8 @@ https://docs.google.com/document/d/1XMKTJJ2iJljxaTinYw4Xjde5B8b4VCf9x-aKtkw4NvU/
 * Nuts and bolts
 
 ## CAD Renderings 
+https://cvilleschools.onshape.com/documents/41f019ee7b99a5521342394d/w/67ee0ddfe5a162cbf153799c/e/70d3de000d6b04c5495e8bd5
+
 
 ### Final code
 ```c+
